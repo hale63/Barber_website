@@ -13,6 +13,7 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+<<<<<<< HEAD
 
 :root {
 
@@ -21,6 +22,12 @@
    */
 
   --rich-black-fogra-39_50: hsla(0, 0%, 5%, 0.5);
+=======
+:root{
+  /**
+  colors*/
+    --rich-black-fogra-39_50: hsla(0, 0%, 5%, 0.5);
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
   --rich-black-fogra-39: hsl(0, 0%, 5%);
   --indian-yellow_10: hsla(36, 61%, 58%, 0.1);
   --indian-yellow: hsl(36, 61%, 58%);
@@ -41,9 +48,14 @@
   --jet: hsl(0, 0%, 21%);
 
   /**
+<<<<<<< HEAD
    * typography
    */
 
+=======
+  ## Typography**
+  */
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
   --ff-oswald : 'Oswald', sans-serif;
   --ff-rubik: 'Rubik', sans-serif;
 
@@ -58,6 +70,7 @@
   --fw-500: 500;
   --fw-600: 600;
   --fw-700: 700;
+<<<<<<< HEAD
 
   /**
    * spacing
@@ -68,20 +81,37 @@
   /**
    * shadow
    */
+=======
+/**
+Spacing*/
+--section-padding: 80px;
+
+/* 
+Shadow*/
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
 
   --shadow-1: 10px 0 60px hsla(0, 0%, 15%, 0.07);
   --shadow-2: 10px 0 60px hsla(0, 0%, 15%, 0.1);
 
+<<<<<<< HEAD
   /**
    * radius
    */
+=======
+  /** Border Radius*/
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
 
   --radius-5: 5px;
   --radius-8: 8px;
 
+<<<<<<< HEAD
   /**
    * transition
    */
+=======
+/**
+Transition*/
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
@@ -92,19 +122,30 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
 *,
 *::before,
+<<<<<<< HEAD
 *::after {
+=======
+*::after{
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 li { list-style: none; }
+=======
+li{ list-style: none;}
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
 
 a,
 img,
@@ -114,6 +155,7 @@ input,
 select,
 button,
 textarea,
+<<<<<<< HEAD
 ion-icon { display: block; }
 
 a {
@@ -126,11 +168,25 @@ img { height: auto; }
 input,
 select,
 button,
+=======
+ion-icon { display: block;}
+
+a {
+  color:indianred;
+  text-decoration: none;
+}
+
+img {height: auto;}
+
+input,
+select,
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
 textarea {
   background: none;
   border: none;
   font: inherit;
 }
+<<<<<<< HEAD
 
 input,
 select,
@@ -143,10 +199,21 @@ ion-icon { pointer-events: none; }
 address { font-style: normal; }
 
 html {
+=======
+input,
+select,
+textarea{ width: 100%;}
+button { cursor: pointer;}
+
+ion-icon { pointer-events: none;}
+address { font-style:  normal;}
+html{
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
   font-family: var(--ff-rubik);
   font-size: 10px;
   scroll-behavior: smooth;
 }
+<<<<<<< HEAD
 
 body {
   background-color: var(--white);
@@ -164,18 +231,41 @@ body {
 ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+=======
+body{
+  background-color:  var(--white);
+  color: var(--sonic-silver);
+  font-size: 1.6rem;
+  line-height:2;
+  height: 300vh;
+}
+:focus-visible { outline-offset: 4px;}
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track { background-color: hsl(0, 0%, 98%); }
+::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
+::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 70%); }
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
 
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+<<<<<<< HEAD
 .container{
   padding-inline:15px;
 }
+=======
+
+
+
+
+
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
 
 
+<<<<<<< HEAD
 .header-top-item,
 .header .btn{
   display: none;
@@ -287,6 +377,10 @@ body {
 .navbar-link:is(:hover,:focus){
   color:var(--indian-yellow);
 }
+=======
+
+
+>>>>>>> 77855395fdfad3bdcf38cce3a69f890bc5e43675
 
 /*-----------------------------------*\
   #HERO
