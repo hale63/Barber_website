@@ -56,3 +56,29 @@ const headerActive = function () {
 addEventOnElem(window, "scroll", headerActive);
 
 
+/***
+ * filter function
+ */
+const filterBtns =document.querySelectorAll("[data-filter-btn]");
+const filterItems =document.querySelectorAll("[data-filter]");
+
+let lastCilckedfilter = filterBtns[0];
+
+const filter = function(){
+  lastCilckedfilter.classList.remove("active");
+  this.classList.add("active");
+  lastCilckedfilter = this;
+  for(let i=0 ;i<filterItems.length ;i++)
+  {
+        if (this.dataset.filterBtn === filterItems[i].dataset.filter ||
+      this.dataset.filterBtn === "all") {
+      filterItems[i].style.display="block";
+      filterItems[i].classList.add("active");
+    }
+    else{
+      filterItems[i].style.display="none";
+      filterItems[i].classList.remove("active");
+    }
+  }
+}
+addEventOnElem( filterBtns,"click",filter);

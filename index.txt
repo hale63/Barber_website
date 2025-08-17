@@ -83,7 +83,7 @@ Multi Hair Colors
 
 Awesome Pricing Plan
 
-Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
+    Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
 
 filter = all
 <i class="flaticon-beauty-salon" aria-hidden="true"></i>

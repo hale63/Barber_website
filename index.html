@@ -43,42 +43,52 @@
   <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
 
 </head>
-
-<body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header">
-
-    <div class="header-top">
-      <div class="container">
-
-        <ul class="header-top-list">
-
-          <li class="header-top-item">
-            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-            <p class="item-title">Call Us :</p>
-
-            <a href="tel:01234567895" class="item-link">012 (345) 67 895</a>
-          </li>
-
-          <li class="header-top-item">
-            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-            <p class="item-title">Opening Hour :</p>
-
-            <p class="item-text">Sunday - Friday, 08 am - 09 pm</p>
-          </li>
-
-          <li>
-            <ul class="social-list">
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
+<body>
+    
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <ul class="header-top-list">
+                    <li class="header-top-item">
+                        <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                            <p class="item-title">Call Us : </p>
+                            <a href="tell:0123456789" class="item-link">012 (345) 67 895</a>
+                    </li>
+                    <li class="header-top-item">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                          <p class="item-title">Opening Hour :</p>
+                           <p class="item-text">Sunday - Friday, 08 am - 09 pm</p>
+                    </li>
+                    <li class="header-top-item">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                          <p class="item-title">Opening Hour :</p>
+                           <p class="item-text">Sunday - Friday, 08 am - 09 pm</p>
+                    </li>
+                    
+                    <li>
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social_link"><ion-icon name="logo-facebook"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social_link"><ion-icon name="logo-twitter"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social_link"><ion-icon name="logo-youtube"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social_link"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom" data-header>
+            <div class="container">
+                <a href="#" class="logo">
+                Barber
+                <span class="span">Hair Salon</span>
                 </a>
               </li>
 
@@ -347,15 +357,445 @@
           </ul>
 
         </div>
-      </section>
+    </header>
+    <main>
+        <article>
+           <!-- 
+        - #PRICING
+      -->
+
+        <section class="section pricing has-bg-image has-before" id="pricing" aria-label="pricing"
+            style="background-image: url('./assets/images/pricing-bg.jpg')">
+            <div class="container">
+
+            <h2 class="h2 section-title text-center">Awesome Pricing Plan</h2>
+
+            <p class="section-text text-center">
+                Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
+            </p>
+
+            <div class="pricing-tab-container">
+
+                <ul class="tab-filter">
+
+                <li>
+                    <button class="filter-btn active" data-filter-btn="all">
+                    <div class="btn-icon">
+                        <i class="flaticon-beauty-salon" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">All Pricing</p>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="filter-btn" data-filter-btn="beauty-spa">
+                    <div class="btn-icon">
+                        <i class="flaticon-relax" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Beauty & Spa</p>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="filter-btn" data-filter-btn="body-treatments">
+                    <div class="btn-icon">
+                        <i class="flaticon-massage" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Body Treatments</p>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="filter-btn" data-filter-btn="face-washing">
+                    <div class="btn-icon">
+                        <i class="flaticon-spa" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Face Washing</p>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="filter-btn" data-filter-btn="meditations">
+                    <div class="btn-icon">
+                        <i class="flaticon-yoga" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Meditations</p>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="filter-btn" data-filter-btn="shaving">
+                    <div class="btn-icon">
+                        <i class="flaticon-razor-blade" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Shaving</p>
+                    </button>
+                </li>
+
+                </ul>
+
+                <ul class="grid-list">
+
+                <li data-filter="shaving">
+                    <div class="pricing-card">
+
+                    <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                        <img src="./assets/images/pricing-1.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="wrapper">
+                        <h3 class="h3 card-title">Hair Cutting & Fitting</h3>
+
+                        <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="89">$89</data>
+
+                    </div>
+                </li>
+
+                <li data-filter="shaving">
+                    <div class="pricing-card">
+
+                    <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                        <img src="./assets/images/pricing-2.jpg" width="90" height="90" alt="Shaving & Facial"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="wrapper">
+                        <h3 class="h3 card-title">Shaving & Facial</h3>
+
+                        <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="45">$45</data>
+
+                    </div>
+                </li>
+
+                <li data-filter="face-washing">
+                    <div class="pricing-card">
+
+                    <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                        <img src="./assets/images/pricing-3.jpg" width="90" height="90" alt="Hair Color & Wash"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="wrapper">
+                        <h3 class="h3 card-title">Hair Color & Wash</h3>
+
+                        <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="35">$35</data>
+
+                    </div>
+                </li>
+
+                <li data-filter="body-treatments">
+                    <div class="pricing-card">
+
+                    <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                        <img src="./assets/images/pricing-4.jpg" width="90" height="90" alt="Body Massage"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="wrapper">
+                        <h3 class="h3 card-title">Body Massage</h3>
+
+                        <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="56">$56</data>
+
+                    </div>
+                </li>
+
+                <li data-filter="beauty-spa">
+                    <div class="pricing-card">
+
+                    <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                        <img src="./assets/images/pricing-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="wrapper">
+                        <h3 class="h3 card-title">Beauty & Spa</h3>
+
+                        <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="27">$27</data>
+
+                    </div>
+                </li>
+
+                <li data-filter="face-washing">
+                    <div class="pricing-card">
+
+                    <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                        <img src="./assets/images/pricing-6.jpg" width="90" height="90" alt="Facial & Face Wash"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="wrapper">
+                        <h3 class="h3 card-title">Facial & Face Wash</h3>
+
+                        <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="63">$63</data>
+
+                    </div>
+                </li>
+
+                <li data-filter="body-treatments">
+                    <div class="pricing-card">
+
+                    <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                        <img src="./assets/images/pricing-7.jpg" width="90" height="90" alt="Backbone Massage"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="wrapper">
+                        <h3 class="h3 card-title">Backbone Massage</h3>
+
+                        <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="43">$43</data>
+
+                    </div>
+                </li>
+
+                <li data-filter="meditations">
+                    <div class="pricing-card">
+
+                    <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                        <img src="./assets/images/pricing-8.jpg" width="90" height="90" alt="Meditation & Massage"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="wrapper">
+                        <h3 class="h3 card-title">Meditation & Massage</h3>
+
+                        <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="74">$74</data>
+
+                    </div>
+                </li>
+
+                </ul>
+
+            </div>
+
+            </div>
 
 
+                </section>
 
+<!-- 
+    - #FOOTER
+  -->
 
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
 
-    </article>
-</main>
-    
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            Barber
+            <span class="span">Hair Salon</span>
+          </a>
+
+          <form action="" class="input-wrapper">
+
+            <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe Now</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Our Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Meet Our Team</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Our Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Need A Career?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">News & Blog</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Hair Cutting</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Shaving & Design</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Hair Colors</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Beauty & Spa</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Body Massages</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Recent News</p>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
+                  <img src="./assets/images/footer-blog-1.jpg" width="70" height="75" loading="lazy"
+                    alt="The beginners guide to Henna Brows in Brisbane" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">The beginners guide to Henna Brows in Brisbane</a>
+                  </h3>
+
+                  <div class="card-date">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                    <time datetime="2022-08-25">25 August 2022</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
+                  <img src="./assets/images/footer-blog-2.jpg" width="70" height="75" loading="lazy"
+                    alt="How do I get rid of unwanted hair on my face?" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">How do I get rid of unwanted hair on my face?</a>
+                  </h3>
+
+                  <div class="card-date">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                    <time datetime="2022-08-25">25 August 2022</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="contact-link">
+                7528 Roberts Ave. Palm Bay, FL 32907
+              </address>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+0123456789" class="contact-link">+012 (345) 67 89</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <span class="contact-link">Sun - Friday, 08 am - 09 pm</span>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="mailto:support@gmail.com" class="contact-link">support@gmail.com</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+        
+
+            
+        </article>
+    </main>
     <!--
     -custom js script
     -->
