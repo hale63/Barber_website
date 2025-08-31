@@ -403,99 +403,117 @@ img.lo{ height: auto;
   margin-block: 15px 40px;
 }
 
-/*-----------------------------------*\
-  #GALLERY
-\*-----------------------------------*/
+.gallery .container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+}
 
-.title-wrapper { margin-block-end: 60px; }
+.photo-gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap; /* küçük ekranlarda alt alta geçmesini sağlar */
+}
 
-.gallery .section-text { margin-block: 12px 15px; }
-
-.gallery-card { position: relative; }
-
-.gallery-card .card-banner .img-cover { transition: var(--transition-2); }
-
-.gallery-card:is(:hover, :focus-within) .card-banner .img-cover { transform: scale(1.1); }
-
-.gallery-card .card-content {
-  position: absolute;
-  inset: 15px;
-  background-color: var(--eerie-black-2_85);
+.column2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
-  opacity: 0;
-  transform: scale(0.8);
-  transition: var(--transition-2);
+  flex: 1;
+  min-width: 200px; /* minimum kolon genişliği */
 }
 
-.gallery-card:is(:hover, :focus-within) .card-content {
-  opacity: 1;
-  transform: scale(1);
+.photo2 img {
+  width: 100%;       /* kolon genişliğine uyum sağlar */
+  height: auto;      /* orantıyı korur */
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.gallery-card :is(.card-title, .card-text) { color: var(--white); }
-
-.gallery-card .card-btn {
-  background-color: var(--white);
-  color: var(--indian-yellow);
-  font-size: 18px;
-  padding: 16px;
-  border-radius: var(--radius-5);
-  margin-block-start: 12px;
-  transition: var(--transition-1);
+.photo2 img:hover {
+  transform: scale(1.05);
 }
 
-.gallery-card .card-btn:is(:hover, :focus) {
-  background-color: var(--indian-yellow);
-  color: var(--white);
+/*-----------------------------------*
+  MOBILE RESPONSIVE
+\*-----------------------------------*/
+@media (max-width: 768px) {
+  .photo-gallery {
+    flex-direction: column; /* kolonları alt alta getir */
+    align-items: center;
+  }
+
+  .column2 {
+    flex-direction: row;  /* her kolon içindeki resimleri yan yana göster */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo2 {
+    width: 48%;  /* iki foto yan yana sığsın */
+    margin-bottom: 10px;
+  }
 }
+
+@media (max-width: 480px) {
+  .photo2 {
+    width: 100%; /* tek kolon olarak göster */
+  }
+}
+
 
 
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
-.service {text-align: center;}
 
-.service.section-text { margin-block :15px 55px;}
-.service-card{
+.service { text-align: center; }
+
+.service .section-text { margin-block: 15px 55px; }
+
+.service-card {
   background-color: var(--white);
-  padding: 60px;
+  padding: 60px 25px;
   box-shadow: var(--shadow-1);
   border-radius: var(--radius-8);
 }
 
-.service-card .card-icon{
+.service-card .card-icon {
   color: var(--indian-yellow);
-  font-size :70px;
+  font-size: 70px;
   line-height: 1;
 }
 
-.service-card .card-title{
+.service-card .card-title {
   margin-block: 15px 12px;
   transition: var(--transition-1);
 }
-.service-card .card-title:is(:hover :focus){ color: var(--indian-yellow);}
 
-.service-crad .card-text{ margin-block-end: 30px;}
+.service-card .card-title:is(:hover, :focus) { color: var(--indian-yellow); }
 
-.service-card .card-btn{
+.service-card .card-text { margin-block-end: 30px; }
+
+.service-card .card-btn {
   color: var(--indian-yellow);
   background-color: var(--white);
   max-width: max-content;
-  margin-inline:auto;
+  margin-inline: auto;
   font-size: 20px;
   padding: 15px;
-  box-shadow: var(--radius-2);
+  box-shadow: var(--shadow-2);
   border-radius: var(--radius-5);
-  transition: var(--transition-2); 
+  transition: var(--transition-2);
 }
-.service-card:is(:hover, :focus-withing) .card-btn{
+
+.service-card:is(:hover, :focus-within) .card-btn {
   background-color: var(--indian-yellow);
   color: var(--white);
 }
+
+
 
 
 
@@ -684,6 +702,13 @@ img.lo{ height: auto;
     transform: translateX(0);
   }
 }
+@media (max-width: 768px) {
+  .about-images {
+    display: none; /* Resimleri gizle */
+  }
+}
+
+
 
 /*-----------------------------------------*\
     Branches
