@@ -21,11 +21,25 @@ window.addEventListener("scroll",function(){
   var header = document.querySelector("[data-header]");
   header.classList.toggle("active" ,window.scrollY > 0 );
 });
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting){
+      console.log(entry.target)
+      entry.target.classList.add("show")
+    }
+    else{
+      entry.target.classList.remove("show");
+    }
+  })
+},{});
+const todoElements =document.querySelectorAll(".container");
+todoElements.forEach(el => observer.observe(el));
 /**
  * navbar toggle
  */
 
-const navbar = document.querySelector("[data-header]");
+const navbar = document.querySelector("[data-navbar]");
 const navToggler = document.querySelector("[data-nav-toggler]");
 const navLinks = document.querySelectorAll("[data-nav-link]");
 

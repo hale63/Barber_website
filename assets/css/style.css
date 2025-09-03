@@ -225,7 +225,15 @@ body {
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
-.container{ padding-inline:15px; }
+.container{ padding-inline:15px; 
+            opacity: 0;
+            transition: all 0.5s ease;
+            
+          }
+.container.show{  
+            opacity: 1;
+            
+           }
 
 .section { padding-block:var(--section-padding);}
 
@@ -322,15 +330,48 @@ font-family: "Roboto Condensed", sans-serif;
   gap: 8px;               /* araya boşluk koy */
   font-size: 20px;        /* yazı boyutu */
   font-weight: bold;      /* kalın yazı */
+  color:var(--indian-yellow);
+  font-family: var(--ff-oswald);
+  font-size: 2.7rem;
+  font-weight:var(--fw-600);
+  text-transform:uppercase;
+  line-height: 1.4;
 }
-
 .logo img {
   width: 40px;   /* logo boyutu */
   height: auto;
   margin-right:10px ;
 }
-img.lo{ height: auto;
-      width: 150px; }
+.flogo{
+  
+  display: flex;
+  flex-direction: column; /* يخلي العناصر تحت بعض */
+  align-items: center;    /* يوسّطها */
+  text-align: center;         /* ortalansın */
+  color:var(--indian-yellow);
+  font-family: var(--ff-oswald);
+  font-size: 2.7rem;
+  font-weight:var(--fw-600);
+  text-transform:uppercase;
+  line-height: 1.4;
+}
+
+.flogo img {
+  width:80px;   /* logo boyutu */
+  height: auto;
+  margin-bottom:5px ;
+}
+.flogo .span{
+  color:var(--white);
+  font-family: var(--ff-rubik);
+  font-size:1.5rem;
+  font-weight: var(--fw-600);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+img.lo{ 
+  height: auto;
+  width: 150px; }
 
 .header-top-item,
 .header .btn{
@@ -380,14 +421,6 @@ img.lo{ height: auto;
   display: flex ;
   justify-content: space-between;
   align-items:center;
-}
-.logo{
-  color:var(--indian-yellow);
-  font-family: var(--ff-oswald);
-  font-size: 2.7rem;
-  font-weight:var(--fw-600);
-  text-transform:uppercase;
-  line-height: 1.4;
 }
 .logo .span{
   color:var(--white);
@@ -491,7 +524,7 @@ img.lo{ height: auto;
 .gallery-card .card-banner .img-cover { transition: var(--transition-2); 
 }
 .gallery-card:is(:hover, :focus-within) .card-banner .img-cover { 
-  transform: scale(1.1); 
+  transform: scale(1.05); 
   filter: grayscale(100%);}
 
 .gallery-card .card-barber {
@@ -553,8 +586,15 @@ img.lo{ height: auto;
   transition: transform 0.3s ease;
 }
 
-.photo2 img:hover {
-  transform: scale(1.05);
+.photo2 img:is(:hover,:focus) {
+  transform: scale(1.03);
+}
+.loadmore{
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  
 }
 
 /*-----------------------------------*
@@ -575,6 +615,12 @@ img.lo{ height: auto;
   .photo2 {
     width: 48%;  /* iki foto yan yana sığsın */
     margin-bottom: 10px;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 922px){
+    .last{
+    display: none;
   }
 }
 
@@ -889,12 +935,16 @@ align-items: center;
   #FOOTER
 \*-----------------------------------*/
 
-.footer {
+.footer-has-bg-image {
+  height: fit-content;
+
   background-color: var(--eerie-black-2);
   padding-block-end: 30px;
 }
 
-.footer-top { margin-block-end: 65px; }
+.footer-top { display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .footer-brand {
   border: 1px solid var(--white_10);
@@ -931,10 +981,16 @@ align-items: center;
 
 .footer-link-box {
   display: grid;
-  gap: 50px;
+  gap: 90px;
+  padding-top:30px ;
+  padding-bottom: 0;
+  place-items: center;
+  margin-top: 40px;
+  
 }
 
 .footer-list-title {
+  padding-top: 0px;
   color: var(--white);
   font-family: var(--ff-oswald);
   font-size: var(--fs-18);
