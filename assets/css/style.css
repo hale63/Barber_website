@@ -318,6 +318,104 @@ font-family: "Roboto Condensed", sans-serif;
   height: 100%;
   object-fit: cover;
 }
+/*----------------------------*\
+language switcher
+\*---------------------------*/
+
+/*.language-item {
+  border: none;
+  padding: 5px 30px;
+}
+
+#language-select {
+  background: var(--rich-black-fogra-39);
+  color: var(--white);
+  font-family: var(--ff-oswald);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: var(--transition-1);
+}
+
+#language-select:hover {
+  color: var(--indian-yellow);
+  border-color: var(--indian-yellow);
+}
+.en{
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/us.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+.du{
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/nl.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.tr{
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/tr.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ar{
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/sa.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+*/
+.language-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.language-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+
+}
+
+.language-menu > ul > li {
+  cursor: pointer;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.language-menu img {
+  width: 20px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.language-menu ul ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.language-menu ul li:hover > ul {
+  display: block;
+
+}
+
+.language-menu ul ul li {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+.language-menu ul ul li:hover {
+background-color: whitesmoke;
+
+}
+
+
 
 /*-----------------------------------*\
   #HEADER
@@ -453,7 +551,7 @@ img.lo{
 
 .navbar-list {
   border-block-start: 1px solid var(--jet);
-  margin-block: 25px;
+  margin-block: 30px;
 }
 
 .navbar-list{

@@ -50,9 +50,34 @@ addEventOnElem(navToggler, "click", toggleNavbar);
 const closeNavbar = () => navbar.classList.remove("active");
 
 addEventOnElem(navLinks, "click", closeNavbar);
+/****
+ * language selector
+ */
+ // Sayfa adına göre seçili dili göster
+function setLang(lang) {
+    localStorage.setItem("lang", lang);
 
+    if (lang === "du") window.location.href = "index-du.html";
+    else if (lang === "tr") window.location.href = "index-tr.html";
+    else if (lang === "ar") window.location.href = "index-ar.html";
+    else window.location.href = "index.html"; // default English
+  }
 
+  // Sayfa yüklendiğinde selector'u güncelle
+  window.addEventListener("DOMContentLoaded", () => {
+    let currentLang = localStorage.getItem("lang") || "en";
 
+    const langData = {
+      en: { text: "English", flag: "https://flagicons.lipis.dev/flags/4x3/gb.svg" },
+      du: { text: "Dutch", flag: "https://flagicons.lipis.dev/flags/4x3/nl.svg" },
+      tr: { text: "Türkçe", flag: "https://flagicons.lipis.dev/flags/4x3/tr.svg" },
+      ar: { text: "العربية", flag: "https://flagicons.lipis.dev/flags/4x3/sa.svg" }
+    };
+
+    const lang = langData[currentLang];
+    document.getElementById("current-flag").src = lang.flag;
+    document.getElementById("current-text").innerText = lang.text;
+  });
 /**
  * header & back top btn active when scroll down to 100px
  */
