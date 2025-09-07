@@ -105,7 +105,7 @@
             </span>
         </div>
         
-        <nav class="navbar container" data-navbar>
+        <nav class="navbar container show" data-navbar>
           <ul class="navbar-list">
 
             <li class="navbar-item">
@@ -127,11 +127,10 @@
             <li class="navbar-item">
               <a href="#gallery" class="navbar-link" data-nav-link>Gallery</a>
             </li>
-            
-
             <li class="navbar-item">
               <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
             </li>
+
             <!--language
           <li class=" language-item ">
       <select id="language-select">
@@ -142,22 +141,23 @@
       </select>
     </li>
   -->
-<div class="language-menu">
-  <ul>
-    <li id="current-lang">
-      <img id="current-flag" src="https://flagicons.lipis.dev/flags/4x3/gb.svg">
-      <span id="current-text">English</span>
-      <ul>
-        <li onclick="setLang('du')">
-          <img src="https://flagicons.lipis.dev/flags/4x3/nl.svg"> Dutch
-        </li>
-        <li onclick="setLang('ar')">
-          <img src="https://flagicons.lipis.dev/flags/4x3/sa.svg"> العربية
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
+          <div class="language-menu">
+            <ul>
+              <li id="current-lang">
+                <img id="current-flag" src="https://flagicons.lipis.dev/flags/4x3/gb.svg">
+                <span id="current-text">English</span>
+                <ul>
+                  <li onclick="setLang('du') ">
+                    <img src="https://flagicons.lipis.dev/flags/4x3/nl.svg"> Dutch
+                  </li>
+                  <li onclick="setLang('ar')">
+                    <img src="https://flagicons.lipis.dev/flags/4x3/sa.svg"> العربية
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        
         </nav>
 
         <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
@@ -597,7 +597,7 @@
                     <div class="pricing-card">
 
                     <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                        <img src="./assets/images/Coloring Roots (1).ico" width="90" height="90" alt="Coloring roots"
+                        <img src="./assets/images/Coloring roots.ico" width="90" height="90" alt="Coloring roots"
                         class="img-cover">
                     </figure>
 

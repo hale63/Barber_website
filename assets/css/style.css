@@ -322,61 +322,16 @@ font-family: "Roboto Condensed", sans-serif;
 language switcher
 \*---------------------------*/
 
-/*.language-item {
-  border: none;
-  padding: 5px 30px;
-}
-
-#language-select {
-  background: var(--rich-black-fogra-39);
-  color: var(--white);
-  font-family: var(--ff-oswald);
-  font-weight: var(--fw-600);
-  text-transform: uppercase;
-  
-  padding: 6px 10px;
-  cursor: pointer;
-  transition: var(--transition-1);
-}
-
-#language-select:hover {
-  color: var(--indian-yellow);
-  border-color: var(--indian-yellow);
-}
-.en{
-  background-image: url(https://flagicons.lipis.dev/flags/4x3/us.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 32px;
-  height: 32px;
-}
-.du{
-  background-image: url(https://flagicons.lipis.dev/flags/4x3/nl.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.tr{
-  background-image: url(https://flagicons.lipis.dev/flags/4x3/tr.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.ar{
-  background-image: url(https://flagicons.lipis.dev/flags/4x3/sa.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-*/
 .language-menu {
   position: relative;
   display: inline-block;
+  color: #fff;
 }
 
 .language-menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  
-
 }
 
 .language-menu > ul > li {
@@ -399,9 +354,11 @@ language switcher
   top: 100%;
 }
 
-.language-menu ul li:hover > ul {
+.language-menu ul li:hover > ul  {
   display: block;
-
+}
+.language-menu ul li:hover > ul ~.navbar-list{
+  height: 550px;
 }
 
 .language-menu ul ul li {
@@ -411,7 +368,7 @@ language switcher
   background-color: black;
 }
 .language-menu ul ul li:hover {
-background-color: whitesmoke;
+background-color: gray;
 
 }
 
@@ -544,20 +501,19 @@ img.lo{
 }
 
 .navbar.active {
-  max-height: 321px;
+  max-height: fit-content;
   display: block;
   transition: 0.5s;
 }
 
 .navbar-list {
+
   border-block-start: 1px solid var(--jet);
   margin-block: 30px;
+  height: 340px;
+  transition: height 0.3s ease;
 }
 
-.navbar-list{
-  border-block-start:1px solid var(--jet);
-  margin-block:25px;
-}
 .navbar-item {border-block-end:1px solid var(--jet);}
 
 .navbar-link{

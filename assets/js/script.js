@@ -50,13 +50,40 @@ addEventOnElem(navToggler, "click", toggleNavbar);
 const closeNavbar = () => navbar.classList.remove("active");
 
 addEventOnElem(navLinks, "click", closeNavbar);
+
+const languageMenu = document.querySelector('.language-menu');
+const navbarList = document.querySelector('.navbar-list');
+
+function handleResize() {
+  if (window.innerWidth <= 992) { // mobile screens
+    languageMenu.addEventListener('mouseenter', expandNav);
+    languageMenu.addEventListener('mouseleave', collapseNav);
+  } else {
+    languageMenu.removeEventListener('mouseenter', expandNav);
+    languageMenu.removeEventListener('mouseleave', collapseNav);
+    navbarList.style.height = ''; // reset
+  }
+}
+
+function expandNav() {
+  navbarList.style.height = '440px';
+}
+
+function collapseNav() {
+  navbarList.style.height = '340px';
+}
+
+window.addEventListener('resize', handleResize);
+handleResize(); // initial check
+
 /****
  * language selector
  */
  // Sayfa adına göre seçili dili göster
+
 function setLang(lang) {
     localStorage.setItem("lang", lang);
-
+    
     if (lang === "du") window.location.href = "index-du.html";
     else if (lang === "tr") window.location.href = "index-tr.html";
     else if (lang === "ar") window.location.href = "index-ar.html";
