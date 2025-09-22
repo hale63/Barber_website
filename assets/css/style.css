@@ -1534,8 +1534,6 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
   .pricing-card { height: 100%; }
 
 
-  /* .pricing-card .card-banner { flex-shrink: 0; } */
-
 
 
   /**
